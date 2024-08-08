@@ -17,6 +17,12 @@ return {
       auto_install = true,
     },
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      automatic_installation = false,
+    },
+  },
 
   --- Add Personal Plugins ---
   {

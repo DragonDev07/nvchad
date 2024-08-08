@@ -8,6 +8,8 @@ local options = {
     java = { "clang-format" },
     rust = { "rustfmt" },
     yaml = { "yamlfix" },
+    json = { "jq" },
+    jsonc = { "jq" },
   },
 
   format_on_save = {
