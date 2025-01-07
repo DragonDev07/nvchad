@@ -10,6 +10,8 @@ local options = {
     yaml = { "yamlfix" },
     json = { "jq" },
     jsonc = { "jq" },
+    python = { "blue", "isort" },
+    sh = { "shfmt" },
   },
 
   format_on_save = {

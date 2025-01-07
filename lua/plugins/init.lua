@@ -2,7 +2,7 @@ return {
   --- Modify Built-In Plugins ---
   {
     "stevearc/conform.nvim",
-    event = "BufWritePre",
+    event = "BufWritePre", -- For formatting on save.
     opts = require "configs.conform",
   },
   {
@@ -20,7 +20,7 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {
-      automatic_installation = false,
+      automatic_installation = true,
     },
   },
 

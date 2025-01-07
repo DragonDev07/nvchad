@@ -1,19 +1,29 @@
--- This file needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
-
 ---@type ChadrcConfig
 local M = {}
 
------- UI Settings ------
-M.ui = {
+------ Base46 Settings ------
+M.base46 = {
   --- Themeing ---
   theme = "catppuccin",
 
+  --- Make Comments Italic ---
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+  },
+}
+
+------ UI Settings ------
+M.ui = {
   --- Statusline ---
   statusline = {
-    theme = "default",
     separator_style = "round",
   },
+}
+
+------ Dash ------
+M.nvdash = {
+  load_on_startup = true,
 }
 
 return M
